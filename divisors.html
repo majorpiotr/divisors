@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+function divisors(integer){
+  //...
+var divisor=[]; // array for our divisors
+for(i=2;i<integer;i++){ // loop - we start from 2 because it is the smallest number greater than 1 :) divisor can not be greater than input number. eg. We can not do 3 / 4
+if(Number.isInteger(integer/i)){//for checking if efect of dividing integer by i is Integer type 
+
+divisor.push(i);//if yes we put number to our array
+
+}
+}
+if (divisor === undefined || divisor.length == 0)// if array empty or does not exist 
+{
+   
+   divisor =  integer + " is prime"; // our array includes only number (input number) and space, and  "is prime" text
+}
+return divisor; //
+}
+
+
+alert(divisors("12"));
+
+</script>
+
+</body>
+</html>
